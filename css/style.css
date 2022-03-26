@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*body{
+  height: 200vh;
+}*/
+*:focus{
+  outline: none;
+}
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: rgba(0,0,0,0.6);
+  padding: 5px 100px;
+}
+
+header .Logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu #active{
+  color: #09ff00;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #09ff00;
+}
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image:  url(../images/heroimg.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  /*background-attachment: fixed; For prallax scrolling*/
+}
+.hero h1{
+  font-size: 40px;
+  color: #04ff00;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.hero p{
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-align: justify;
+  color: white;
+  width: 430px;
+  /*word-wrap: break-word;*/
+}
+.section2{
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.section2 span{
+  font-size: 40px;
+  color: black;
+  /*margin: 10px;*/
+}
+.section2 h1{
+  font-size: 35px;
+  font-weight: normal;
+  margin: 5px;
+  text-decoration: underline;
+}
+.section2 #viewall{
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+  color: #0091ff; 
+}
+.section2 .cards{
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.section2 .cards .card1{
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0px 20px  rgba(0,0,0,0.3);
+}
+.section2 .cards .card1:hover{
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+}
+.section2 .cards img{
+  width: 100%;
+  height: 60%;
+}
+.section2 .cards h1{
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.section2 .cards p{
+  font-size: 15px;
+  background-color: #0091ff;
+  color: white;
+  margin-bottom: 10px;
+}
+.section2 .cards a{
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  background-color:  #0091ff;
+  padding: 10px;
+  border-radius: 30px;
+}
+.section2 .cards .card2{
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0px 20px  rgba(0,0,0,0.3);
+}
+.section2 .cards .card2:hover{
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+}
+.section2 .cards .card3{
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0px 20px  rgba(0,0,0,0.3);
+}
+.section2 .cards .card3:hover{
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+}
+.section3{
+  height: 100vh;
+  width: 100%;
+}
+.section3 h1{
+  text-align: center;
+  margin: 25px 0px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.section3 ul{
+  float: left;
+}
+.section3 li{
+  padding: 10px 20px;
+  margin: 50px  0px  0px 100px;
+  font-size: 20px;
+  font-weight: 300;
+  list-style-type: none;
+}
+.section3 li:before{
+  content: '✔';
+  font-weight: 250;
+  color: #04ff00;
+  margin-right: 20px;
+}
+.section3 img{
+  height: 50%;
+  width: 50%;
+  float: right;
+  margin: 100px 100px 0 0;
+}
+.footer{
+  height: max-content;
+  width: 100%;
+  background-color: #292626;
+  padding: 10PX;
+  column-count: 3;
+  color: #fff;
+  font-weight: 250;
+}
+.footer .column1{
+  padding: 20px;
+}
+.footer .column1 h2{
+  font-weight: 250;
+  font-size: 30px;
+}
+.footer .column1 ul li{
+  list-style-type: none;
+  padding: 10px 0 10px 10px;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+}
+.footer .column1 ul li:nth-child(1):before{
+  content: '✉';
+  font-size: 18px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.footer .column1 ul li:nth-child(2):before{
+  content: '\260E';
+  font-size: 18px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.footer .column1 ul li:nth-child(3):before{
+  content: '🗏';
+  font-size: 18px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.footer .column1 ul li a{
+  text-decoration: none;
+  color: #d7d9d7;
+}
+.footer .column1 ul li a:hover{
+  color: #fff;
+}
+.footer .column2{
+  padding: 20px;
+}
+.footer .column2 h2{
+  font-weight: 250;
+  font-size: 30px;
+}
+.footer .column2 ul li{
+  list-style-type: none;
+  padding: 10px 0 10px 10px;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+}
+.footer .column2 ul li a{
+  text-decoration: none;
+  color: #d7d9d7;
+}
+.footer .column2 ul li a:hover{
+  color: #fff;
+}
+.footer .column3{
+  padding: 20px;
+}
+.footer .column3 h2{
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.footer .column3 .subscribe{
+  height: 40px;
+  width: 100%;
+}
+.footer .column3 .subscribe input[type=email]{
+  width: 75%;
+  border:none;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer .column3 .subscribe button{
+  height: 100%;
+  width: 20%;
+  margin: 0;
+  border:none;
+  border-radius: 5px;
+}
+.footer .column3 .social-media{
+  margin-top: 60px;
+  padding: 20px;
+}
+.footer .column3 .social-media a{
+  font-size: 25px;
+  color: #fff;
+  padding: 30px 10px;
+}
+.footer .column3 .social-media a:nth-child(1):hover{
+  color: red;
+}
+.footer .column3 .social-media a:nth-child(2):hover{
+  color: #0091ff;
+}
+.footer .column3 .social-media a:nth-child(3):hover{
+  color: #f00ad5;
+}
+.footer .column3 .social-media a:nth-child(4):hover{
+  color: blue;
+}
+h5{
+  text-align:center;
+  background-color: #292626;
+  color: #fff;
+  font-weight: 310;
+  font-size: 20px;
+  border-top: 1px solid #fff;
+  padding: 5px 0;
+}
+h5 a{
+  text-decoration: underline;
+  color: #fff;
+}
